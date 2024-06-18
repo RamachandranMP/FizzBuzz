@@ -13,11 +13,11 @@ namespace FizzBuzzTests.Controllers
         [Test]
         public void ValidateNumberDivision_ReturnTrue()
         {
-            string[] divNumbers = { Constants.strThree };
+            string[] divNumbers = { Constants.StrThree };
             IFizzBuzzManager fizzBuzzManager = new ThreeDividerManager();
             //Arrange
             var managerRepositoryMock = new Mock<IFizzBuzzManagerFactory>();
-            managerRepositoryMock.Setup(manager => manager.GetFizzBuzzManager(Constants.strThree)).Returns(fizzBuzzManager);
+            managerRepositoryMock.Setup(manager => manager.GetFizzBuzzManager(Constants.StrThree)).Returns(fizzBuzzManager);
             FizzBuzzController fizzBuzzController = new FizzBuzzController(managerRepositoryMock.Object);
 
             //Act
@@ -26,7 +26,7 @@ namespace FizzBuzzTests.Controllers
             var result = fizzBuzz.Select(r => r.Result).First();
 
             //Assert
-            Assert.That(input, Is.EqualTo(Constants.strThree));
+            Assert.That(input, Is.EqualTo(Constants.StrThree));
             Assert.That(result, Is.EqualTo(Constants.Fizz));
         }
     }

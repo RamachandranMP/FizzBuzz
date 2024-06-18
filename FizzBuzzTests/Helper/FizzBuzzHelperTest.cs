@@ -8,7 +8,7 @@ namespace FizzBuzzTests.Helper
         [Test]
         public void IsNumeric_ReturnTrue()
         {
-            bool result = FizzBuzzHelper.IsNumeric(Constants.strOne);
+            bool result = FizzBuzzHelper.IsNumeric(Constants.StrOne);
             Assert.That(result, Is.EqualTo(true));
         }
         [Test]

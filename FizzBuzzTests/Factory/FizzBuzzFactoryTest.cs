@@ -18,40 +18,40 @@ namespace FizzBuzzTests.Factory
         [Test]
         public void IsMultiDivider_ReturnTrue()
         {
-            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.strFifteen);
-            var result = factManager.GetDivisionResult(Constants.strFifteen);
+            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.StrFifteen);
+            var result = factManager.GetDivisionResult(Constants.StrFifteen);
             Assert.That(result, Is.EqualTo(Constants.FizzBuzz));
         }
 
         [Test]
         public void IsMultiDivider_ReturnFalse()
         {
-            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.strFive);
-            var result = factManager.GetDivisionResult(Constants.strFifteen);
+            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.StrFive);
+            var result = factManager.GetDivisionResult(Constants.StrFifteen);
             Assert.That(result, Is.Not.EqualTo(Constants.FizzBuzz));
         }
 
         [Test]
         public void IsThreeDivider_ReturnTrue()
         {
-            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.strThree);
-            var result = factManager.GetDivisionResult(Constants.strThree);
+            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.StrThree);
+            var result = factManager.GetDivisionResult(Constants.StrThree);
             Assert.That(result, Is.EqualTo(Constants.Fizz));
         }
 
         [Test]
         public void IsFiveDivider_ReturnTrue()
         {
-            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.strFive);
-            var result = factManager.GetDivisionResult(Constants.strFive);
+            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.StrFive);
+            var result = factManager.GetDivisionResult(Constants.StrFive);
             Assert.That(result, Is.EqualTo(Constants.Buzz));
         }
 
         [Test]
         public void IsUnDivider_ReturnFalse()
         {
-            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.strOne);
-            var result = factManager.GetDivisionResult(Constants.strOne);
+            var factManager = fizzBuzzFactory.GetFizzBuzzManager(Constants.StrOne);
+            var result = factManager.GetDivisionResult(Constants.StrOne);
             Assert.That(result, Is.Not.EqualTo(Constants.FizzBuzz));
         }
 

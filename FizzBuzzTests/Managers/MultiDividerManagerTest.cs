@@ -17,7 +17,7 @@ namespace FizzBuzzTests.Managers
         [Test]
         public void IsMultiDivider_ReturnTrue()
         {
-            var result = multiDividerManager.GetDivisionResult(Constants.strFifteen);
+            var result = multiDividerManager.GetDivisionResult(Constants.StrFifteen);
             Assert.That(result, Is.EqualTo(Constants.FizzBuzz));
         }
     }

@@ -17,7 +17,7 @@ namespace FizzBuzzTests.Managers
         [Test]
         public void IsUndividableDivider_ReturnTrue()
         {
-            var result = undividableManager.GetDivisionResult(Constants.strOne);
+            var result = undividableManager.GetDivisionResult(Constants.StrOne);
             Assert.That(result, Is.Not.EqualTo(Constants.FizzBuzz));
         }
     }
