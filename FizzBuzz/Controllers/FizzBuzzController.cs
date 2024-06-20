@@ -28,14 +28,6 @@ namespace FizzBuzz.Controllers
                 });
             }
             return fizzBuzz;
-
-            //IEnumerable<FizzBuzzModel> data = fizzBuzz;
-            //DataTable table = new DataTable();
-            //using (var reader = ObjectReader.Create(data))
-            //{
-            //    table.Load(reader);
-            //}
-            //return JsonConvert.SerializeObject(table, Formatting.Indented);
         }
     }
 }
